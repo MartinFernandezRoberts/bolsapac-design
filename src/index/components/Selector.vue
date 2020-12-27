@@ -1,5 +1,5 @@
 <template>
-    <div class="relative -inset-2.5 border-solid border-4 border-blue-200 bg-blue-400 w-5 h-5 rounded-full" id="selector">
+    <div class="border-double border-4 border-blue-600 bg-green-400 w-5 h-5 rounded-full" id="selector">
     </div>
 </template>
 

@@ -1,33 +1,45 @@
 <template>
-    <div class="max-w-full mx-auto py-6 sm:px-6 lg:px-8 bg-white" style="height: 100vh;">
-      <div class="mx-w-7xl border-solid border-2 border-blue-400 bg-white" style="height: 95vh;" >
-        <Selector
+  <Carril
+  />
+  <!--<Nav
+  /> -->
+  <NavMovil
+  />
+<!--     <Selector class="relative inset-5"
         />       
         <Nav
         />
-        <ProductosIndexCategorias 
-        />
-      </div>
-    </div>
-    <Footer
+    <ProductosIndexCategorias 
     />
+    <Footer
+    /> -->
+  <Footer
+  />
 </template>
 
 
 <script>
-
+/* 
 import ProductosIndexCategorias from './components/productos/ProductosIndexCategorias'
 import Nav from './components/nav/Nav'
 import Selector from './components/Selector'
+import Footer from './components/footer/Footer' */
+
 import Footer from './components/footer/Footer'
+import Carril  from './components/Carril'
+import NavMovil from './components/navmovil/NavMovil'
 
 export default {
   name: 'Index',
   components: {
-    ProductosIndexCategorias,
+/*     ProductosIndexCategorias,
     Nav,
     Selector,
-    Footer
+    Footer */
+
+    Footer,
+    Carril,
+    NavMovil
   }
 }
 </script>
