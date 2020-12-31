@@ -1,11 +1,11 @@
 <template>
 
-<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 230 42">
+<svg xmlns="http://www.w3.org/2000/svg" id="wea">
 
  <title>bolsapac</title>
  <g>
   <title>background</title>
-  <rect fill="none" id="canvas_background" height="44" width="232" y="-1" x="-1"/>
+  <rect fill="none" id="canvas_background"/>
  </g>
  <g>
   <title>Layer 1</title>
@@ -128,4 +128,8 @@ export default {
     .cls-1{fill:#009245;}
     .cls-2{fill:#06c;}
     .cls-3{fill:#fff;}
+        #wea{
+        height: 42px;
+        width: 232px;
+    }
 </style>
