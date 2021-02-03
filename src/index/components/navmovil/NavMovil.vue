@@ -21,7 +21,7 @@
       />
     </div>
     <div class="flex-grow flex justify-center">
-      <Productos
+      <Productos class="mt-6"
       />
     </div>
   </div>

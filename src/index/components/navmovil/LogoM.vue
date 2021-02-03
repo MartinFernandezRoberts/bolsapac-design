@@ -1,6 +1,6 @@
 <template>
 
-<svg xmlns="http://www.w3.org/2000/svg" id="wea">
+<svg xmlns="http://www.w3.org/2000/svg" id="lm">
 
  <title>bolsapac</title>
  <g>
@@ -128,7 +128,7 @@ export default {
     .cls-1{fill:#009245;}
     .cls-2{fill:#06c;}
     .cls-3{fill:#fff;}
-        #wea{
+        #lm{
         height: 42px;
         width: 232px;
     }

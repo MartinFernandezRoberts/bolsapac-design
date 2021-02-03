@@ -1,10 +1,10 @@
 <template>
     <ul id="array">
-        <li class="text-sm text-right" v-for="item in items" v-bind:key="item">
+        <li class="text-sm text-right font-mukta w800 " v-for="item in items" v-bind:key="item">
                 
                     {{ item.nombre }}
                 
-            <span class="text-xs"> 
+            <span class="text-xs font-mukta w200"> 
                 
                     {{ item.detalle }}
                 
