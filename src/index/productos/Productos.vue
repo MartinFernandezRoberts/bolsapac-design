@@ -1,11 +1,10 @@
 <template>
-
 <div>
     <ul class="mt-1 pt-1" id="array">
         <li class="text-sm text-right font-mukta w800 " v-for="item in items" v-bind:key="item">
-                
+                <a :href="traerImagenes(item)">
                     {{ item.nombre }}
-                
+                </a>
             <span class="text-xs font-mukta w200"> 
                 
                     {{ item.detalle }}
@@ -23,20 +22,30 @@ export default {
     data() {
       return {
         items: [
-            {nombre:'BOLSAS POUNCH ', detalle:'IMPRESAS/AL VACÍO'},
-            {nombre:'BOLSA POUNCH'},
-            {nombre:'BOLSA SELLO CÓNICO'},
-            {nombre:'FILMS PARA ENVASADO'},
-            {nombre:'BOLSAS RETAIL ', detalle:'COMPOSTABLE/BOUTIQUE'},
-            {nombre:'BOLSAS COURIER ', detalle:'POLIETILENO NO PETRÓLEO/COMPOSTABLE'},
-            {nombre:'BOLSAS MANILLA TROQUEL Y TIPO SOBRE'},
-            {nombre:'BOLSAS WICKET PESO ESPECÍFICO'},
-            {nombre:'BOLSAS PACK PROMOCIÓN'},
-            {nombre:'BOLSAS TERMORETRÁCTILES'},
-            {nombre:'BOLSAS MOCHILA CON CORDÓN'},
+            {nombre:'BOLSAS POUNCH', detalle:'IMPRESAS/AL VACÍO', imagenes:['1.png','2.png']},
+            {nombre:'BOLSA POUNCH', imagenes:['1.png','2.png']},
+            {nombre:'BOLSA SELLO CÓNICO', imagenes:['1.png','2.png']},
+            {nombre:'FILMS PARA ENVASADO', imagenes:['1.png','2.png']},
+            {nombre:'BOLSAS RETAIL ', detalle:'COMPOSTABLE/BOUTIQUE', imagenes:['1.png','2.png']},
+            {nombre:'BOLSAS COURIER ', detalle:'POLIETILENO NO PETRÓLEO/COMPOSTABLE', imagenes:['1.png','2.png']},
+            {nombre:'BOLSAS MANILLA TROQUEL Y TIPO SOBRE', imagenes:['1.png','2.png']},
+            {nombre:'BOLSAS WICKET PESO ESPECÍFICO', imagenes:['1.png','2.png']},
+            {nombre:'BOLSAS PACK PROMOCIÓN', imagenes:['1.png','2.png']},
+            {nombre:'BOLSAS TERMORETRÁCTILES', imagenes:['1.png','2.png']},
+            {nombre:'BOLSAS MOCHILA CON CORDÓN', imagenes:['1.png','2.png']},
         ]
       }
-    }
+    },
+    methods: {
+        traerImagenes(item){
+            let q=`?nombre=${item.nombre}`
+            item.imagenes.forEach(imagen=>{
+                q+=`&imagenes=${imagen}`
+            })
+            return q;
+        }
+
+    },
 }
 </script>
 

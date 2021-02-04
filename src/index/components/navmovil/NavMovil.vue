@@ -7,8 +7,10 @@
     </div>
     
     <div class="flex-grow flex justify-center" id="logM">
+      <router-link to="/" class="">
       <LogoM
       />
+      </router-link>
     </div>
 
   </div>
