@@ -1,4 +1,5 @@
 <template>
+    
     <div class="absolute top-20 left-20">
             <div class="flex-grow flex justify-center">
                 <div id="LogoContain">

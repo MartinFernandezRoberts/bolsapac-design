@@ -14,14 +14,18 @@
   </div>
   
   <div class="flex flex-row">
-    <div class="" id="encuadre">
+    <div class="" id="enc">
       <ElementosM v-if="abierto"
       />
       <DivM v-else
       />
     </div>
-    <div class="flex-grow flex justify-center">
-      <Productos class="mt-6"
+    <div class="">
+      <div>
+        <BuscarM
+        />
+      </div>
+      <Productos
       />
     </div>
   </div>
@@ -33,6 +37,7 @@ import BotonM from './BotonM'
 import ElementosM from './ElementosM'
 import DivM from "./DivM"
 import Productos from '../../productos/Productos'
+import BuscarM from './BuscarM'
 
 export default {
   
@@ -42,7 +47,8 @@ export default {
         BotonM,
         ElementosM,
         DivM,
-        Productos
+        Productos,
+        BuscarM
     },
     data() {
       return {
@@ -53,7 +59,7 @@ export default {
 }
 </script>
 <style scoped>
-  #encuadre{
+  #enc{
         height: 287px; width:80px;
   }
 </style>

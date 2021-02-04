@@ -1,5 +1,7 @@
 <template>
-    <ul id="array">
+
+<div>
+    <ul class="mt-1 pt-1" id="array">
         <li class="text-sm text-right font-mukta w800 " v-for="item in items" v-bind:key="item">
                 
                     {{ item.nombre }}
@@ -11,9 +13,11 @@
             </span>
         </li>
     </ul>
+</div>
 </template>
 
 <script>
+
 export default {
     name: 'Productos',
     data() {
@@ -35,4 +39,10 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+    #array{
+         height: 209px;
+    }
+</style>
 
