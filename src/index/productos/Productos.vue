@@ -23,7 +23,7 @@ export default {
       return {
         items: [
             {nombre:'BOLSAS POUNCH', detalle:'IMPRESAS/AL VACÍO', imagenes:['1.png','2.png']},
-            {nombre:'BOLSA POUNCH', imagenes:['1.png','2.png']},
+            {nombre:'BOLSA POUNCH', imagenes:['3.png','4.png']},
             {nombre:'BOLSA SELLO CÓNICO', imagenes:['1.png','2.png']},
             {nombre:'FILMS PARA ENVASADO', imagenes:['1.png','2.png']},
             {nombre:'BOLSAS RETAIL ', detalle:'COMPOSTABLE/BOUTIQUE', imagenes:['1.png','2.png']},
@@ -38,6 +38,7 @@ export default {
     },
     methods: {
         traerImagenes(item){
+            
             let q=`?nombre=${item.nombre}`
             item.imagenes.forEach(imagen=>{
                 q+=`&imagenes=${imagen}`

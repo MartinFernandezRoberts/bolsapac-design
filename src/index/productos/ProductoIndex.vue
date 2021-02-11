@@ -2,7 +2,8 @@
 <template>
   <div id="produktoindecs">
       {{ query }}
-      <img v-for="imagen in query.imagenes" :key="imagen" :src="'../../assets/img/productos/'+imagen" alt="">
+      <img v-for="imagen in query.imagenes" :key="imagen"  :src="require('@/assets/img/productos/'+imagen)" alt="ME CARGUÉ AUTOMÁGICAMENTE PQ SOI CUL">
+      
   </div>
 
 </template>
@@ -18,4 +19,5 @@ export default {
         }
     }
 }
-</script>
+</script> 
+
