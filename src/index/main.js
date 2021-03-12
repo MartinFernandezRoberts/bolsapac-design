@@ -8,6 +8,7 @@ import Procesos from './components/procesos/Procesos'
 import Contacto from './components/contacto/Contacto'
 import ProductoIndex from './productos/ProductoIndex'
 
+
 const routes = [
     { path: '/', component: ProductoIndex },
     { path: '/somos', component: Somos },

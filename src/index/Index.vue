@@ -1,24 +1,31 @@
 <template>
   <Carril class="hidden md:block"
   />
-  <Nav class="hidden md:block"
+
+  <Nav 
   />
-  <Footer
-  />
+
+
+
   <div class="md:hidden pt-2 pr-4 mr-4 mt-2 border-t border-r border-blue ">
     <NavMovil class="md:hidden"
     />
   </div>
-  <div class="static md:hidden" id="NomProducto">
-    <h1 class="font-mukta"> {{ nomSeccion }} </h1>
-  </div>
+
   
-  <div>
+  <div class=" md:flex md:flex-row md:absolute">
+  <div class="hidden md:flex md:flex-col ">
+    <Productos
+    />
+  </div>
+  <div class="md:flex md:flex-col "> 
     <router-view></router-view>
   </div>
+  </div>
   
 
-
+  <Footer
+  />
 
 
 
@@ -27,11 +34,13 @@
 
 <script>
 
-import Footer from './components/footer/Footer'
+/* import Footer from './components/footer/Footer'
+ */
 import Carril  from './components/Carril'
 import NavMovil from './components/navmovil/NavMovil'
 import Nav from './components/nav/Nav'
-
+import Productos from './productos/Productos'
+import Footer from './components/footer/Footer'
 
 export default {
   name: 'Index',
@@ -39,7 +48,8 @@ export default {
     Footer,
     Carril,
     NavMovil,
-    Nav
+    Nav,
+    Productos
 
   }
 }

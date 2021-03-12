@@ -1,15 +1,15 @@
 <template>
     
-    <div class="absolute top-20 left-20">
-            <div class="flex-grow flex justify-center">
-                <div id="LogoContain">
-                    <img src="@/assets/img/bolsapac_logo.svg" alt="Bolsapac"/>
+    <div class="hidden md:block">
+            <div class="flex-row flex md:pt-10 ">
+                <div  class="2xl:h-60 2xl:-ml-72 xl:ml-11 md:ml-11 md:w-36  relative flex-grow flex justify-center" >
+                    <img  class="" src="@/assets/img/bolsapac_logo.svg" alt="Bolsapac"/>
                 </div>
-                <div>
+                <div class="flex flex-col">
                     <Buscar
                     />
                 </div>
-                <div class="">
+                <div class="flex flex-col">
                     <Elementos 
                     /> 
                 </div>
@@ -21,6 +21,7 @@
 import Buscar from './Buscar'
 import Elementos from './Elementos'
 
+
 export default {
     name: 'Nav',
     components:{
@@ -31,8 +32,9 @@ export default {
 </script>
 
 <style scoped>
-    #LogoContain{
+    #imlog{
         height: 110px;
         width: 160px;
     }
+   
 </style>
