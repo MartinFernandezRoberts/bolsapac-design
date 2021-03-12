@@ -12,8 +12,10 @@
         </template>
         </Carousel>
     </div>
-    </div>
-  <div class="pt-2 pr-2 md:hidden" id="kntnt">
+</div>
+
+
+  <div class="pt-2 pr-2 md:hidden " id="kntnt">
         <h1 class="font-mukta text-lg text-right font-mukta w800 ">
             {{ query.nombre }}
             
@@ -35,10 +37,13 @@
     </Carousel>
 
     <div id="dscr">
-       <h1 class="font-mukta text-sm text-right font-mukta w800 ">
+       <h1 class="pr-8 font-mukta text-sm text-right font-mukta w800 ">
             {{ query.nombre }}
             
         </h1>
+        <h2 class="font-mukta text-sm text-right font-mukta w400">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure quidem impedit consequuntur voluptate nisi distinctio magni, illum numquam cum vel eveniet tenetur, temporibus facilis in vero. Consequatur, eius molestias.
+        </h2>
     </div>
   </div>
 
