@@ -1,10 +1,11 @@
 
 <template>
+
 <div class="flex flex-row">
     <div class="hidden md:block">
         <Carousel :items-to-show="1" :wrapAround=true >
-            <Slide v-for="imagen in query.imagenes" :key="imagen" >
-                <img :src="require('@/assets/img/productos/'+imagen)" :alt= query.nombre >
+            <Slide v-for="imagen in item.imagenes" :key="imagen" >
+                <img :src="require('@/assets/img/productos/'+imagen)" :alt= item.nombre >
             </Slide>
         <template #addons>
             <Navigation />
@@ -16,33 +17,34 @@
 
 
   <div class="pt-2 pr-2 md:hidden " id="kntnt">
-        <h1 class="font-mukta text-lg text-right font-mukta w800 ">
-            {{ query.nombre }}
+        <h1 class="pr-4 font-mukta text-lg text-right font-mukta w800 ">
+            {{ item.nombre }}
             
         </h1>
-        <p class="font-mukta text-sm text-right font-mukta w800"> {{ query.detalle }} </p>
+        <p class="font-mukta text-sm text-right font-mukta w800"> {{ item.detalle }} </p>
 
 <!--       <img v-for="imagen in query.imagenes" :key="imagen"  :src="require('@/assets/img/productos/'+imagen)" :alt= query.nombre > -->
      
 
-    <Carousel :items-to-show="1" :wrapAround=true >
-        <Slide v-for="imagen in query.imagenes" :key="imagen" >
-            <img :src="require('@/assets/img/productos/'+imagen)" :alt= query.nombre >
+    <Carousel class="pt-2" :items-to-show="1" :wrapAround=true >
+        <Slide v-for="(imagen, index) in item.imagenes" :key="index" >
+            <img :src="require('@/assets/img/productos/'+imagen)" alt="una imagen" >
         </Slide>
 
         <template #addons>
-        <Navigation />
-        <Pagination />
+            <Navigation />
+            <Pagination />
         </template>
     </Carousel>
 
     <div id="dscr">
        <h1 class="pr-8 font-mukta text-sm text-right font-mukta w800 ">
-            {{ query.nombre }}
+            {{ item.nombre }}
             
         </h1>
-        <h2 class="font-mukta text-sm text-right font-mukta w400">
+        <h2 class="pt-3 font-mukta text-sm text-center font-mukta w400">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure quidem impedit consequuntur voluptate nisi distinctio magni, illum numquam cum vel eveniet tenetur, temporibus facilis in vero. Consequatur, eius molestias.
+        
         </h2>
     </div>
   </div>
@@ -50,9 +52,9 @@
 </template>
 
 <script>
-import { useRoute } from 'vue-router'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
+import { useRoute } from 'vue-router'
 
 export default {
     name: 'ProductoIndex',
@@ -61,13 +63,19 @@ export default {
         Slide,
         Pagination,
         Navigation
-  
     },
-    data(){
+     data(){
         return {
-            query: useRoute().query
+            query: useRoute().query    
         }
-    }
+    },  
+    computed: {
+        item() {
+            
+            return this.$store.state.items[useRoute().query.ind]
+            
+        }
+    },
 }
 </script> 
 
@@ -84,7 +92,7 @@ export default {
 
 .carousel__slide {
   padding: 10px;
-  height: 280px;
+  height: 300px;
 }
 
 .carousel__prev,

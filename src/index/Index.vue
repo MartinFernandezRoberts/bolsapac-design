@@ -14,13 +14,13 @@
 
   
   <div class=" md:flex md:flex-row md:absolute">
-  <div class="hidden md:flex md:flex-col ">
-    <Productos
-    />
-  </div>
-  <div class="md:flex md:flex-col "> 
-    <router-view></router-view>
-  </div>
+    <div class="hidden md:flex md:flex-col ">
+      <Productos
+      />
+    </div>
+    <div class="md:flex md:flex-col "> 
+      <router-view></router-view>
+    </div>
   </div>
   
 
@@ -34,13 +34,12 @@
 
 <script>
 
-/* import Footer from './components/footer/Footer'
- */
 import Carril  from './components/Carril'
 import NavMovil from './components/navmovil/NavMovil'
 import Nav from './components/nav/Nav'
 import Productos from './productos/Productos'
 import Footer from './components/footer/Footer'
+
 
 export default {
   name: 'Index',
@@ -54,10 +53,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
- 
-  #NomProducto{
-    height: 5vh;  
-  }
-</style>

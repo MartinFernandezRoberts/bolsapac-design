@@ -1,6 +1,6 @@
 <template>
     <div class="fixed mx-auto py-4 px-4 bg-white" style="height: 100vh; width:100vw;">
-      <div class=" mx-w-7xl  border-t-2 border-l-2 border-solid border-blue" style="height: 70vh;" >
+      <div class="mx-w-7xl  border-t-2 border-l-2 border-solid border-blue" style="height: 75vh;" >
       </div>
     </div>
 </template>
