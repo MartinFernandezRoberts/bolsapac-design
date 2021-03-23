@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div >
+        Quienes somos realmente?
     </div>
 </template>
 

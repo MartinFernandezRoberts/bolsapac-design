@@ -7,10 +7,12 @@ import Sustentabilidad from './components/sustentabilidad/Sustentabilidad'
 import Procesos from './components/procesos/Procesos'
 import Contacto from './components/contacto/Contacto'
 import ProductoIndex from './productos/ProductoIndex'
+import Portada from './components/portada/Portada'
 import { createStore } from 'vuex'
 
 const routes = [
-    { path: '/', component: ProductoIndex },
+    { path: '/', component: Portada },
+    { path: '/prod', component: ProductoIndex },
     { path: '/somos', component: Somos },
     { path: '/sustentabilidad', component: Sustentabilidad },
     { path: '/procesos', component: Procesos },
@@ -39,8 +41,8 @@ const store = createStore({
         ]
   },
   getters: {
-    getItemById: (state) => (id) => {
-      return state.items.find(item => item.ind == id)
+    getItemById: (state) => (ind) => {
+      return state.items.find(item => item.ind == ind)
     }
   }
   

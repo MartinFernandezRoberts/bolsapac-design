@@ -124,7 +124,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .cls-1{fill:#009245;}
     .cls-2{fill:#06c;}
     .cls-3{fill:#fff;}

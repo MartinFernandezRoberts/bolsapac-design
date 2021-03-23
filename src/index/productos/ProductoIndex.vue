@@ -1,11 +1,23 @@
 
 <template>
+<div id="Prodindx">
+<!-- Escritorio -->
+
+
+    <div class=" pr-2 -mt-10 md:block hidden text-right">
+        <h1 class="pr-4 font-mukta text-lg text-right font-mukta w800 ">
+            {{ item.nombre }}
+            
+        </h1>
+        <p class="font-mukta text-sm text-right font-mukta w800"> {{ item.detalle }} </p>
+    </div>
+
 
 <div class="flex flex-row">
     <div class="hidden md:block">
         <Carousel :items-to-show="1" :wrapAround=true >
             <Slide v-for="imagen in item.imagenes" :key="imagen" >
-                <img :src="require('@/assets/img/productos/'+imagen)" :alt= item.nombre >
+                <img class="max-w-xs" :src="require('@/assets/img/productos/'+imagen)" :alt= item.nombre >
             </Slide>
         <template #addons>
             <Navigation />
@@ -15,7 +27,7 @@
     </div>
 </div>
 
-
+<!-- Móvil -->
   <div class="pt-2 pr-2 md:hidden " id="kntnt">
         <h1 class="pr-4 font-mukta text-lg text-right font-mukta w800 ">
             {{ item.nombre }}
@@ -28,7 +40,7 @@
 
     <Carousel class="pt-2" :items-to-show="1" :wrapAround=true >
         <Slide v-for="(imagen, index) in item.imagenes" :key="index" >
-            <img :src="require('@/assets/img/productos/'+imagen)" alt="una imagen" >
+            <img class=" max-w-xs" :src="require('@/assets/img/productos/'+imagen)" :alt= item.nombre >
         </Slide>
 
         <template #addons>
@@ -48,7 +60,7 @@
         </h2>
     </div>
   </div>
-
+</div>
 </template>
 
 <script>
@@ -79,7 +91,7 @@ export default {
 }
 </script> 
 
-<style>
+<style scoped>
 .carousel__item {
   
   color:  var(--carousel-color-white);
@@ -98,7 +110,6 @@ export default {
 .carousel__prev,
 .carousel__next {
   box-sizing: content-box;
-  border: 5px solid white;
 }
 .kntnt{
     height: 262px;
@@ -106,4 +117,5 @@ export default {
 .dscr{
     height: 30px;
 }
+
 </style>
