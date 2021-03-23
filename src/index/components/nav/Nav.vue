@@ -2,9 +2,13 @@
     
     <div class="hidden md:block">
             <div class="flex-row flex md:pt-10 md:pr-1 ">
-                <div  class="2xl:h-60 2xl:-ml-72 xl:ml-11 md:ml-11 md:w-36  relative flex-grow flex justify-center" >
-                    <img  class="" src="@/assets/img/bolsapac_logo.svg" alt="Bolsapac"/>
-                </div>
+                <router-link to="/">
+                    <div  class="md:ml-11  md:w-56  relative flex-grow flex justify-center" >
+                        
+                            <img link-to class="" src="@/assets/img/bolsapac_logo.svg" alt="Bolsapac"/>
+                        
+                    </div>
+                </router-link>
                 <div class="flex flex-col">
                     <Buscar
                     />
