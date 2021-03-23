@@ -5,5 +5,7 @@ module.exports = {
     index: 'src/index/main.js',
   },
 
-  runtimeCompiler: true
+  runtimeCompiler: true,
+
+
 }

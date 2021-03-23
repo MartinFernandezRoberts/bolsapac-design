@@ -55,12 +55,13 @@
             
         </h1>
         <h2 class="pt-3 font-mukta text-sm text-center font-mukta w400">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure quidem impedit consequuntur voluptate nisi distinctio magni, illum numquam cum vel eveniet tenetur, temporibus facilis in vero. Consequatur, eius molestias.
+            {{ item.desc }}
         
         </h2>
     </div>
   </div>
 </div>
+
 </template>
 
 <script>
@@ -79,16 +80,18 @@ export default {
      data(){
         return {
             query: useRoute().query    
+            
         }
     },  
     computed: {
         item() {
             
-            return this.$store.state.items[useRoute().query.ind]
-            
+            // return this.$store.state.items[useRoute().query.ind]
+            return this.$store.getters.getItemById(useRoute().query.ind)
         }
     },
 }
+
 </script> 
 
 <style scoped>

@@ -2,8 +2,10 @@
 <div class="md:w-96">
     <ul class="2xl:mt-8 md:pt-3 mt-1 pt-1" id="array">
         <li class="2xl:mt-1 2xl:text-lg 2xl:pl-10 md:text-left md:pl-12 md:pt-1 text-sm text-right font-mukta w800" v-for="(item, index) in items" :key="index">
-            
-             <a :href="'/prod/'+ ruta(item)">
+             <router-link 
+             :to="'/prod'+ruta(item)"
+             >
+             
                 {{ item.nombre }}
 
                 <span class="md:hidden text-xs font-mukta w200"> 
@@ -13,7 +15,8 @@
                 <h1 class="hidden md:block -mt-1 text-sm font-mukta w200">
                     {{ item.detalle }}
                 </h1>
-            </a>
+             
+             </router-link>
         </li>
     </ul>
 </div>

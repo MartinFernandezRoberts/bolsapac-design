@@ -8,7 +8,7 @@
 
 
   <div class="md:hidden pt-2 pr-4 mr-4 mt-2 border-t border-r border-blue ">
-    <NavMovil class="md:hidden"
+    <NavMovil class="md:hidden block"
     />
   </div>
 
