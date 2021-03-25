@@ -1,5 +1,5 @@
 <template>
-<div class="bg-green bottom-0 h-24 md:absolute" id="foot">
+<div class="bg-green w-full h-24 md:absolute md:bottom-0" id="foot">
   <div class="flex flex-row ml-6 pt-2">
     <h1 class="font-mukta text-sm font-mukta w600 text-white ">PLÁSTICO</h1><h1 class="text-white font-mukta text-sm font-mukta w800 ml-1"> COMPOSTABLE - RECICLABLE - REUTILIZABLE</h1>
   </div>
@@ -21,8 +21,3 @@ export default {
 }
 </script>
 
-<style scoped>
-  #foot{
-   width:100vw;
-  }
-</style>

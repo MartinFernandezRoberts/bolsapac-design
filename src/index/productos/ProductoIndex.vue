@@ -3,63 +3,57 @@
 <div id="Prodindx">
 <!-- Escritorio -->
 
-
     <div class=" pr-2 -mt-10 md:block hidden text-right">
         <h1 class="pr-4 font-mukta text-lg text-right font-mukta w800 ">
             {{ item.nombre }}
-            
         </h1>
         <p class="font-mukta text-sm text-right font-mukta w800"> {{ item.detalle }} </p>
     </div>
 
-
-<div class="flex flex-row">
-    <div class="hidden md:block">
-        <Carousel :items-to-show="1" :wrapAround=true >
-            <Slide v-for="imagen in item.imagenes" :key="imagen" >
-                <img class="max-w-xs" :src="require('@/assets/img/productos/'+imagen)" :alt= item.nombre >
-            </Slide>
-        <template #addons>
-            <Navigation />
-            <Pagination />
-        </template>
-        </Carousel>
+    <div class="flex flex-row">
+        <div class="hidden md:block">
+            <Carousel :items-to-show="1" :wrapAround=true >
+                <Slide v-for="(imagen, index) in item.imagenes" :key="index" >
+                    <img class="max-w-xs" :src="'/assets/img/productos/'+item.imagenes[index]" :alt= item.nombre >
+                </Slide>
+            <template #addons>
+                <Navigation />
+                <Pagination />
+            </template>
+            </Carousel>
+        </div>
     </div>
-</div>
 
 <!-- Móvil -->
-  <div class="pt-2 pr-2 md:hidden " id="kntnt">
+    <div class="pt-2 pr-2 md:hidden " id="kntnt">
         <h1 class="pr-4 font-mukta text-lg text-right font-mukta w800 ">
             {{ item.nombre }}
             
         </h1>
         <p class="font-mukta text-sm text-right font-mukta w800"> {{ item.detalle }} </p>
 
-<!--       <img v-for="imagen in query.imagenes" :key="imagen"  :src="require('@/assets/img/productos/'+imagen)" :alt= query.nombre > -->
-     
+<!--    <img v-for="imagen in query.imagenes" :key="imagen"  :src="require('@/assets/img/productos/'+imagen)" :alt= query.nombre > -->
 
-    <Carousel class="pt-2" :items-to-show="1" :wrapAround=true >
-        <Slide v-for="(imagen, index) in item.imagenes" :key="index" >
-            <img class=" max-w-xs" :src="require('@/assets/img/productos/'+imagen)" :alt= item.nombre >
-        </Slide>
+        <Carousel class="pt-2" :items-to-show="1" :wrapAround=true >
+            <Slide v-for="(imagen, index) in item.imagenes" :key="index" >
+                <img class="max-w-xs" :src="'/img/productos/'+item.imagenes[index]" :alt= item.nombre  >
+            </Slide>
 
-        <template #addons>
-            <Navigation />
-            <Pagination />
-        </template>
-    </Carousel>
+            <template #addons>
+                <Navigation />
+                <Pagination />
+            </template>
+        </Carousel>
 
-    <div id="dscr">
-       <h1 class="pr-8 font-mukta text-sm text-right font-mukta w800 ">
-            {{ item.nombre }}
-            
-        </h1>
-        <h2 class="pt-3 font-mukta text-sm text-center font-mukta w400">
-            {{ item.desc }}
-        
-        </h2>
+        <div id="dscr">
+            <h1 class="pr-8 font-mukta text-sm text-right font-mukta w800 ">
+                {{ item.nombre }}
+            </h1>
+            <h2 class="pt-3 font-mukta text-sm text-center font-mukta w400">
+                {{ item.desc }}
+            </h2>
+        </div>
     </div>
-  </div>
 </div>
 
 </template>

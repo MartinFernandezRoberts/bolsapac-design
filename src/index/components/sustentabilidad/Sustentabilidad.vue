@@ -1,5 +1,5 @@
 <template>
-  <div id="greenFingers">ou yea</div>
+  <div>Sustentabilidad</div>
 </template>
 
 <script>

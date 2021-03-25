@@ -1,5 +1,5 @@
 <template>
-  <div id="Procesoooooo">me pide un besop</div>
+  <div>Procesos</div>
 </template>
 
 <script>

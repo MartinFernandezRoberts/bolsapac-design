@@ -12,7 +12,6 @@
     />
   </div>
 
-  
   <div class=" md:flex md:flex-row md:absolute">
     <div class="hidden md:flex md:flex-col ">
       <Productos
@@ -22,11 +21,9 @@
       <router-view></router-view>
     </div>
   </div>
-  
 
-  <Footer
+  <Footer 
   />
-
 
 
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div id="contakt"> OLA</div>
+  <div > Contacto </div>
 </template>
 
 <script>
