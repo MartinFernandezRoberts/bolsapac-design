@@ -1,23 +1,25 @@
 
 <template>
-<div id="Prodindx">
+<div id="Prodindx" class="md:w-full md:h-full">
 <!-- Escritorio -->
-
     <div class=" pr-2 -mt-10 md:block hidden text-right">
         <h1 class="pr-4 font-mukta text-lg text-right font-mukta w800 ">
-            {{ item.nombre }}
+            {{ nombre  }}
         </h1>
-        <p class="font-mukta text-sm text-right font-mukta w800"> {{ item.detalle }} </p>
+        <p class="font-mukta text-sm text-right font-mukta w800"> {{ detalle }} </p>
     </div>
 
     <div class="flex flex-row">
-        <div class="hidden md:block">
-            <Carousel :items-to-show="1" :wrapAround=true >
-                <Slide v-for="(imagen, index) in item.imagenes" :key="index" >
-                    <img class="max-w-xs" :src="'/assets/img/productos/'+item.imagenes[index]" :alt= item.nombre >
+        <div class="hidden md:block w-full">
+            <Carousel class="w-full" :items-to-show="1" :wrapAround=true >
+                <Slide v-for="(imagen, index) in imagenes" :key="index" >
+                    <!-- <img class="lg:min-w-lg lg:max-w-md max-w-xs" :src="'/assets/img/productos/'+item.imagenes[index]" :alt= item.nombre > -->
+                    <img class=" md:max-w-xs" :src="'/assets/img/productos/'+imagenes[index]" :alt= nombre >
+
                 </Slide>
             <template #addons>
-                <Navigation />
+                <Navigation 
+                />
                 <Pagination />
             </template>
             </Carousel>
@@ -27,16 +29,16 @@
 <!-- Móvil -->
     <div class="pt-2 pr-2 md:hidden " id="kntnt">
         <h1 class="pr-4 font-mukta text-lg text-right font-mukta w800 ">
-            {{ item.nombre }}
+            {{ nombre }}
             
         </h1>
-        <p class="font-mukta text-sm text-right font-mukta w800"> {{ item.detalle }} </p>
+        <p class="font-mukta text-sm text-right font-mukta w800"> {{ detalle }} </p>
 
 <!--    <img v-for="imagen in query.imagenes" :key="imagen"  :src="require('@/assets/img/productos/'+imagen)" :alt= query.nombre > -->
 
         <Carousel class="pt-2" :items-to-show="1" :wrapAround=true >
-            <Slide v-for="(imagen, index) in item.imagenes" :key="index" >
-                <img class="max-w-xs" :src="'/img/productos/'+item.imagenes[index]" :alt= item.nombre  >
+            <Slide v-for="(imagen, index) in imagenes" :key="index" >
+                <img class="max-w-xs" :src="'/assets/img/productos/'+imagenes[index]" :alt= nombre  >
             </Slide>
 
             <template #addons>
@@ -47,10 +49,10 @@
 
         <div id="dscr">
             <h1 class="pr-8 font-mukta text-sm text-right font-mukta w800 ">
-                {{ item.nombre }}
+                {{ nombre }}
             </h1>
             <h2 class="pt-3 font-mukta text-sm text-center font-mukta w400">
-                {{ item.desc }}
+                {{ desc }}
             </h2>
         </div>
     </div>
@@ -61,7 +63,7 @@
 <script>
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
-import { useRoute } from 'vue-router'
+
 
 export default {
     name: 'ProductoIndex',
@@ -71,19 +73,8 @@ export default {
         Pagination,
         Navigation
     },
-     data(){
-        return {
-            query: useRoute().query    
-            
-        }
-    },  
-    computed: {
-        item() {
-            
-            // return this.$store.state.items[useRoute().query.ind]
-            return this.$store.getters.getItemById(useRoute().query.ind)
-        }
-    },
+    props: ['ind','nombre','detalle','desc','imagenes']
+
 }
 
 </script> 
@@ -101,12 +92,12 @@ export default {
 
 .carousel__slide {
   padding: 10px;
-  height: 300px;
 }
 
 .carousel__prev,
 .carousel__next {
   box-sizing: content-box;
+  
 }
 .kntnt{
     height: 262px;

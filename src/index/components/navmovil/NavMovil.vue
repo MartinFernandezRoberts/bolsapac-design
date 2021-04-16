@@ -22,7 +22,8 @@
       <DivM v-else
       />
     </div>
-    <div class="">
+
+    <div class="w-full">
       <div>
         <BuscarM
         />

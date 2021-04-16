@@ -12,12 +12,12 @@
     />
   </div>
 
-  <div class=" md:flex md:flex-row md:absolute">
+  <div class=" md:flex md:flex-row md:absolute w-full md:h-4/6">
     <div class="hidden md:flex md:flex-col ">
       <Productos
       />
     </div>
-    <div class="md:flex md:flex-col "> 
+    <div class="md:flex md:flex-col md:w-full"> 
       <router-view></router-view>
     </div>
   </div>
