@@ -1,6 +1,6 @@
 <template>
 
-<div class="bg-green w-full h-26  md:absolute md:bottom-0 " id="foot">
+<div class="bg-green w-full h-20 " id="foot">
   <div class="flex flex-row  ml-6 pt-2">
     <h1 class="font-mukta text-sm font-mukta  text-white ">PLÁSTICO</h1><h1 class="text-white font-mukta text-sm font-mukta w800 ml-1"> COMPOSTABLE - RECICLABLE - REUTILIZABLE</h1>
   </div>

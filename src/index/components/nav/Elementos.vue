@@ -1,7 +1,7 @@
 <template>
     
 
-  <div class="relative flex items-baseline space-x-20 pl-20">
+  <div class="relative flex items-baseline space-x-16 ml-20">
     <router-link to="/somos" class="px-2 py-2 rounded-md" >
       <p class="text-sm font-mukta w600 text-gray-600 lg:text-base hover:text-black">
       SOMOS

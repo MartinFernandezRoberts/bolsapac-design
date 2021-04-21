@@ -1,7 +1,7 @@
 <template>
-    
+
     <div class="hidden md:block">
-            <div class="flex-row flex md:pt-10 md:pr-1 ">
+            <div class="flex-row flex mt-2  ">
                 <router-link to="/">
                     <div  class="md:ml-11  md:w-56  relative flex-grow flex justify-center" >
                         
@@ -19,6 +19,7 @@
                 </div>
             </div>
     </div>
+    
 </template>
 
 <script>

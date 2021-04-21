@@ -14,7 +14,7 @@
             <Carousel class="w-full" :items-to-show="1" :wrapAround=true >
                 <Slide v-for="(imagen, index) in imagenes" :key="index" >
                     <!-- <img class="lg:min-w-lg lg:max-w-md max-w-xs" :src="'/assets/img/productos/'+item.imagenes[index]" :alt= item.nombre > -->
-                    <img class=" md:max-w-xs" :src="'/assets/img/productos/'+imagenes[index]" :alt= nombre >
+                    <img class="md:max-w-xs " :src="'/assets/img/productos/'+imagenes[index]" style="height: 50vh" :alt= nombre >
 
                 </Slide>
             <template #addons>
