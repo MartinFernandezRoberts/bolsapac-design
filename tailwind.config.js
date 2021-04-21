@@ -18,12 +18,13 @@ module.exports = {
         'xs':  '0.60rem',
         'sm': '0.8rem',
       },
+  }
   },
   variants: {
     extend: {},
   },
   plugins: [
-    require('@tailwindcss/forms')
+    require('@tailwindcss/forms'),
   ],
-},
 }
+
