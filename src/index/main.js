@@ -15,11 +15,11 @@ import Portada from './components/portada/Portada'
 
 const routes = [
     { path: '/', component: Portada },
-    { path: '/prod/:ind', name: 'Producto', component: ProductoIndex, props: true },
-    { path: '/somos', component: Somos },
-    { path: '/sustentabilidad', component: Sustentabilidad },
-    { path: '/procesos', component: Procesos },
-    { path: '/contacto', component: Contacto },
+    { path: '/prod/:ind', name: 'producto', component: ProductoIndex, props: true },
+    { path: '/somos', name:'somos', component: Somos },
+    { path: '/sustentabilidad', name:'sustentabilidad', component: Sustentabilidad },
+    { path: '/procesos', name:'procesos', component: Procesos },
+    { path: '/contacto', name:'contacto', component: Contacto },
 ]
 
 const router = createRouter({

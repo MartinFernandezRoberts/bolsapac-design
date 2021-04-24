@@ -9,14 +9,12 @@
                         
                     </div>
                 </router-link>
-                <div class="flex flex-col">
+                <div class="flex flex-col ">
                     <Buscar
                     />
                 </div>
-                <div class="flex flex-col">
                     <Elementos 
                     /> 
-                </div>
             </div>
     </div>
     

@@ -1,5 +1,5 @@
 <template>
-  <div class="md:mt-4 md:mr-2 md:ml-4 md:border-t-2  md:border-solid md:border-blue md:h-full" >
+  <div class="md:mt-4 md:mr-8 md:ml-4 md:border-t-2  md:border-solid md:border-blue md:h-full" >
     <div class=" md:border-l-2 md:border-solid md:border-blue ">
       <Nav class="pt-2"
       />
