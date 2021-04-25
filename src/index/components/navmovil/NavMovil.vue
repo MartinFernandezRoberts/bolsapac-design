@@ -24,8 +24,8 @@
     </div>
 
     <div class="w-full">
-      <div>
-        <BuscarM
+      <div class="">
+        <Buscar
         />
       </div>
       <Productos
@@ -40,7 +40,7 @@ import BotonM from './BotonM'
 import ElementosM from './ElementosM'
 import DivM from "./DivM"
 import Productos from '../../productos/Productos'
-import BuscarM from './BuscarM'
+import Buscar from '../buscar/Buscar'
 
 export default {
   
@@ -51,7 +51,7 @@ export default {
         ElementosM,
         DivM,
         Productos,
-        BuscarM
+        Buscar
     },
     data() {
       return {

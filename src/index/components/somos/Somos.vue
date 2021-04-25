@@ -14,7 +14,7 @@
                 BolsaPac cuenta con tecnología de punta para todos sus procesos, apoyada con sistemas de mejora continua, trazabilidad y normas según estándar ISO 9000-2001.
             </p>
             <div class="flex flex-row">
-            <div class="flex-col w-9/12 mt-3">
+            <div class="flex-col md:w-9/12 w-10/12 mt-3">
                 <p class="font-mukta text-sm md:text-base w300">
                     Ventajas:
                     

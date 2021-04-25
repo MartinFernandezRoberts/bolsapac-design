@@ -6,7 +6,7 @@
    </div>
   <div class="md:flex md:flex-row md:pt-5 w-full"> 
     
-    <form class="flex flex-col md:-mt-5 w-72 mx-auto contact-form"  @submit.prevent="sendEmail">
+    <form class="flex flex-col md:-mt-5 w-72 mx-auto contact-form"  @submit.prevent="sendEmail" >
       
 
       <label class="font-mukta w800 md:mt-0 mt-1">Nombre:</label>

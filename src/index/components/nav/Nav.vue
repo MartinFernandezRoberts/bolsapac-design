@@ -13,15 +13,15 @@
                     <Buscar
                     />
                 </div>
-                    <Elementos 
-                    /> 
+                    <Elementos class="h-20"
+                    />
             </div>
     </div>
     
 </template>
 
 <script>
-import Buscar from './Buscar'
+import Buscar from '../buscar/Buscar'
 import Elementos from './Elementos'
 
 

@@ -4,10 +4,6 @@ module.exports = {
   pages:{
     index: 'src/index/main.js',
   },
-
+  
   runtimeCompiler: true,
-
-
-
 }
-
