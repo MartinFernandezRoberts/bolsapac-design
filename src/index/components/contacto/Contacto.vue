@@ -1,9 +1,10 @@
 <template>
+  <div class="overflow-auto ">
   <div class="pr-2 my-4  md:-mt-10 text-right">
     <h1 class="mr-4 font-mukta text-lg text-right font-mukta w800 ">
         Contacto y Ubicación
     </h1>
-   </div>
+  </div>
   <div class="md:flex md:flex-row md:pt-5 w-full"> 
     
     <form class="flex flex-col md:-mt-5 w-72 mx-auto contact-form"  @submit.prevent="sendEmail" >
@@ -28,17 +29,18 @@
 
 
 
-  <div class="md:flex md:mx-auto my-auto border-gray-800 border border-solid">
-    <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.3005827583575!2d-70.6416548851949!3d-33.623447480724806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d83135b81d3d%3A0x13853695d127df09!2sBolsapac!5e0!3m2!1ses-419!2scl!4v1618882667556!5m2!1ses-419!2scl"
-    width="400"
-    height="300"
-    style="border:0;"
-    allowfullscreen=""
-    loading="lazy"
-    
-    >
-    </iframe>
+    <div class="md:flex md:mx-auto my-auto border-gray-800 border border-solid">
+      <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.3005827583575!2d-70.6416548851949!3d-33.623447480724806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d83135b81d3d%3A0x13853695d127df09!2sBolsapac!5e0!3m2!1ses-419!2scl!4v1618882667556!5m2!1ses-419!2scl"
+      width="400"
+      height="300"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      
+      >
+      </iframe>
+    </div>
   </div>
   </div>
 </template>

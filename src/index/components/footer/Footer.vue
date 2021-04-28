@@ -1,6 +1,6 @@
 <template>
 
-<div class="bg-green w-full h-20 flex flex-col" id="foot">
+<div class="bg-green w-full h-20 flex flex-col 2xl:h-60" id="foot">
   <div class="flex  mx-auto mt-2 relative">
     <div class="relative flex w-5 h-5 ">
       <img class=" mx-auto" src="@/assets/img/reciclable.svg" alt="Bolsapac"/>

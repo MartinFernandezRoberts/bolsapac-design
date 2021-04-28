@@ -6,18 +6,18 @@
       />
     </div>
     
-    <div class="flex-grow flex justify-center" id="logM">
-      <router-link to="/" class="">
-      <LogoM
-      />
+      <router-link :to="{ name: 'portada' }" class="flex-grow flex justify-center w-full">
+        <div class="flex-grow flex justify-center w-full" id="logM">
+          <img link-to class="" src="@/assets/img/LogoM.svg" alt="Bolsapac"/>  
+        </div>
+              
       </router-link>
-    </div>
 
   </div>
   
   <div class="flex flex-row">
     <div class="" id="enc">
-      <ElementosM v-if="abierto"
+      <Elementos v-if="abierto"
       />
       <DivM v-else
       />
@@ -35,9 +35,8 @@
 </template>
 
 <script>
-import LogoM from './LogoM'
 import BotonM from './BotonM'
-import ElementosM from './ElementosM'
+import Elementos from '../elementos/Elementos'
 import DivM from "./DivM"
 import Productos from '../../productos/Productos'
 import Buscar from '../buscar/Buscar'
@@ -46,9 +45,8 @@ export default {
   
     name: 'NavMovil',
     components: {
-        LogoM,
         BotonM,
-        ElementosM,
+        Elementos,
         DivM,
         Productos,
         Buscar

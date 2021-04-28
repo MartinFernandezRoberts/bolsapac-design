@@ -2,7 +2,7 @@
 
     <div class="hidden md:block">
             <div class="flex-row flex mt-2  ">
-                <router-link to="/">
+                <router-link :to="{ name: 'portada'}">
                     <div  class="md:ml-11  md:w-56  relative flex-grow flex justify-center" >
                         
                             <img link-to class="" src="@/assets/img/bolsapac_logo.svg" alt="Bolsapac"/>
@@ -10,8 +10,10 @@
                     </div>
                 </router-link>
                 <div class="flex flex-col ">
-                    <Buscar
+                    <div class="">
+                    <Buscar @buscar="pasaBuscar" :serch="serch"
                     />
+                    </div>
                 </div>
                     <Elementos class="h-20"
                     />
@@ -22,7 +24,7 @@
 
 <script>
 import Buscar from '../buscar/Buscar'
-import Elementos from './Elementos'
+import Elementos from '../elementos/Elementos'
 
 
 export default {
@@ -30,7 +32,14 @@ export default {
     components:{
         Elementos,
         Buscar
-    }
+    },
+    props: ['serch'],
+    methods: {
+        pasaBuscar(serch) {
+            this.$emit('buscar', serch);
+        }
+    },
+    emits: ['buscar'],
 }
 </script>
 

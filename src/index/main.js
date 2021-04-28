@@ -14,12 +14,13 @@ import Portada from './components/portada/Portada'
 
 
 const routes = [
-    { path: '/', component: Portada },
+    { path: '/', name:'portada', component: Portada },
     { path: '/prod/:ind', name: 'producto', component: ProductoIndex, props: true },
     { path: '/somos', name:'somos', component: Somos },
     { path: '/sustentabilidad', name:'sustentabilidad', component: Sustentabilidad },
     { path: '/procesos', name:'procesos', component: Procesos },
     { path: '/contacto', name:'contacto', component: Contacto },
+    
 ]
 
 const router = createRouter({
