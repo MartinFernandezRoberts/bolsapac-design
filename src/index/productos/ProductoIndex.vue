@@ -1,11 +1,11 @@
 
 <template>
 <div id="Prodindx" class="md:w-10/12 md:h-full">
-    <div class=" pt-2 md:pt-0 pr-2 md:-mt-10">
-        <h1 class=" font-mukta text-lg text-right font-mukta w800 ">
+    <div class=" pt-2 md:pt-0 4xl:pt-56 pr-2 md:-mt-10">
+        <h1 class="4xl:text-6xl font-mukta text-lg text-right font-mukta w800 ">
             {{ nombre  }}
         </h1>
-        <p class="font-mukta text-sm text-right font-mukta w800">
+        <p class="4xl:text-4xl font-mukta text-sm text-right font-mukta w800">
             {{ detalle }} </p>
     </div>
 

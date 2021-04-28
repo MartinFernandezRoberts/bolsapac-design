@@ -9,7 +9,7 @@
         active-class="border-white border-b-2 border-solid md:border-blue md:text-black "
         >
           <p 
-          class="text-xs md:text-sm lg:text-base text-center font-medium  font-mukta tracking-tighter md:tracking-normal w200 md:w600 ">
+          class="text-xs md:text-sm lg:text-base 4xl:text-4xl text-center font-medium  font-mukta tracking-tighter md:tracking-normal w200 md:w600 ">
             {{ elem.disp }}
           </p>
         </router-link>

@@ -1,11 +1,11 @@
 <template>
  
-<div class="md:w-96 md:h-3/4 2xl:h-5/6 overflow-auto">
+<div class="md:w-96 md:h-3/4 2xl:h-4/5 3xl:h-5/6  md:overflow-auto">
     <h1>{{ serch }}</h1>
 
-    <ul class="2xl:mt-8 md:pt-3 mt-1 pt-1 "  id="array">
+    <ul class="4xl:mt-16 3xl:mt-8 2xl:mt-4 md:pt-3 mt-1 pt-1 "  id="array">
         <li 
-        class="  2xl:mt-1 2xl:text-lg 2xl:pl-10   md:text-left md:pl-12 md:pt-1 text-sm text-right font-mukta w800 text-gray-700 hover:text-black" 
+        class="4xl:mt-6  3xl:mt-1 3xl:text-xl 3xl:pl-10 2xl:mt-1 2xl:text-base 4xl:text-3xl   md:text-left md:pl-12 md:pt-1 text-sm text-right font-mukta w800 text-gray-700 hover:text-black" 
         v-for="(prod, ind) in prod" :key="ind"
         >
              <router-link 
@@ -22,7 +22,7 @@
                     {{ prod.detalle }}
                 </span>
 
-                <h1 class="hidden md:block -mt-1 text-sm font-mukta w200">
+                <h1 class="hidden md:block -mt-1 text-sm 4xl:text-2xl font-mukta w200">
                     {{ prod.detalle }}
                 </h1>
              
