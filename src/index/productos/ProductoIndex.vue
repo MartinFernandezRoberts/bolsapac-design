@@ -1,7 +1,7 @@
 
 <template>
-<div id="Prodindx" class="md:w-10/12 md:h-full">
-    <div class=" pt-2 md:pt-0 4xl:pt-56 pr-2 md:-mt-10">
+<div id="Prodindx" class="md:w-full md:h-full md:pt-2">
+    <div class="pt-2 4xl:pt-56 pr-2 ">
         <h1 class="4xl:text-6xl font-mukta text-lg text-right font-mukta w800 ">
             {{ nombre  }}
         </h1>
@@ -13,7 +13,7 @@
         <div class="md:w-full">
             <Carousel class="md:w-full md:pt-0 pt-2 " :items-to-show="1" :wrapAround=true >
                 <Slide v-for="(imagen, index) in imagenes" :key="index" >
-                    <img class="md:max-w-xs 2xl:max-w-full " :src="require(`@/assets/img/productos/${imagenes[index]}`)" id="theIm" :alt= nombre >
+                    <img class="max-h-80" :src="require(`@/assets/img/productos/${imagenes[index]}`)" id="theIm" :alt= nombre >
                 </Slide>
             <template #addons>
                 <Navigation 
@@ -25,10 +25,13 @@
             <h1 class="pr-8 font-mukta text-sm text-right font-mukta w800 ">
                 {{ nombre }}
             </h1>
-            <h2 class="pt-3 font-mukta text-sm text-center font-mukta w400">
+            
+            </div>
+            <span>
+            <h2 class="hidden md:block w-1/3 -mt-36 font-mukta text-base text-left font-mukta w400">
                 {{ desc }}
             </h2>
-        </div>
+            </span>
         </div>
     </div>
 
@@ -82,11 +85,7 @@ export default {
 .dscr{
     height: 30px;
 }
-@media(min-width: 768px){
-  #theIm{ height: 50vh;
-  max-height: 800px;
-   }
-}
+
 /* @media(min-width: 1024px){
   #theIm{ height: 50vh;
    }

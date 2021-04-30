@@ -25,7 +25,7 @@
 
     <div class="w-full">
       <div class="">
-        <Buscar
+        <Buscar @buscar="pasaBuscar" :serch="serch"
         />
       </div>
       <Productos
@@ -51,12 +51,19 @@ export default {
         Productos,
         Buscar
     },
+    props: ['serch'],
     data() {
       return {
         abierto: true,
         
       }
     },
+    methods: {
+        pasaBuscar(serch) {
+            this.$emit('buscar', serch);
+        }
+    },
+    emits: ['buscar'],
 }
 </script>
 <style scoped>

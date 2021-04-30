@@ -9,7 +9,12 @@ module.exports = {
       ...defaultTheme.screens,
       '2xl': '1430px',
     },
+    
     extend: {
+    minHeight: {
+      '20': '5rem',
+     'screen': '100vh',
+     },
       screens: {
         '3xl': '1919px',
         '4xl': '3800px',
@@ -29,7 +34,7 @@ module.exports = {
         'xs':  '0.60rem',
         'sm': '0.8rem',
       },
-    }
+    },
   },
   variants: {
     extend: {},

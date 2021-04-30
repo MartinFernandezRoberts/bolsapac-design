@@ -1,18 +1,18 @@
 <template>
-    <div class="overflow-auto 3xl:h-full xl:h-full xl:-mt-8">
-        <div class="md:h-96 h-auto w-auto pr-6">
+    <div class="md:mt-6 overflow-auto xl:h-full">
+        <div class="h-auto w-auto pr-6">
             <div class="text-right pr-2 pb-2">
                 <h1 class="md:pr-4 2xl:text-3xl font-mukta text-lg text-right font-mukta w800 ">
                     SOMOS
                 </h1>
             </div>
-        <div class="text-left pl-6 2xl:mt-2">    
-            <p class="font-mukta text-sm md:text-base 3xl:text-xl w300 ">
-                Nuestra propuesta es desarrollar productos innovadores utilizando nuestra capacidad técnica e insumos innovadores con tecnología de punta, como por ejemplo: Films Coextruídos 3 capas, BOPP naturales, metalizados, mate, y una amplia gama de variedades, además de la nueva generacíon de películas Nylon Poliamida Biorentadas, las que otorgan una barrera al oxígeno, grasas, aceites y aromas.
-            </p>
-            <p class="font-mukta text-sm md:text-base 3xl:text-xl w300">
-                BolsaPac cuenta con tecnología de punta para todos sus procesos, apoyada con sistemas de mejora continua, trazabilidad y normas según estándar ISO 9000-2001.
-            </p>
+            <div class="text-left pl-6 2xl:mt-2">    
+                <p class="font-mukta text-sm md:text-base 3xl:text-xl w300 ">
+                    Nuestra propuesta es desarrollar productos innovadores utilizando nuestra capacidad técnica e insumos innovadores con tecnología de punta, como por ejemplo: Films Coextruídos 3 capas, BOPP naturales, metalizados, mate, y una amplia gama de variedades, además de la nueva generacíon de películas Nylon Poliamida Biorentadas, las que otorgan una barrera al oxígeno, grasas, aceites y aromas.
+                </p>
+                <p class="font-mukta text-sm md:text-base 3xl:text-xl w300">
+                    BolsaPac cuenta con tecnología de punta para todos sus procesos, apoyada con sistemas de mejora continua, trazabilidad y normas según estándar ISO 9000-2001.
+                </p>
             <div class="flex flex-row">
             <div class="flex-col md:w-9/12 w-10/12 mt-3">
                 <p class="font-mukta text-sm md:text-base 3xl:text-xl w300">

@@ -1,12 +1,15 @@
 <template>
-  <div class="md:mt-4 md:mr-8 md:ml-4 md:border-t-2  md:border-solid md:border-blue md:h-full" >
+  <div class="flex flex-col min-h-screen">
+    <div class="md:mt-4 md:mr-8 md:ml-4 md:border-t-2  md:border-solid md:border-blue" >
     <div class=" md:border-l-2 md:border-solid md:border-blue ">
       <Nav class="pt-2" @buscar="buscar" :serch="serch"
       />
     </div>
 
-    <div class="md:hidden pt-2 pr-4 mr-4 mt-2 border-t border-r border-blue">
-      <NavMovil 
+    <div
+      class="md:hidden pt-2 pr-4 mr-4 mt-2 border-t border-r border-blue"
+    >
+      <NavMovil @buscar="buscar" :serch="serch"
       />
     </div>
 
@@ -16,15 +19,13 @@
         />
       </div>
 
-      <div class="md:flex md:flex-col md:w-full" id="rout"> 
+      <div class="md:flex md:flex-col md:w-full md:-mt-28" > 
         <router-view>
         </router-view>
       </div>
     </div>
   </div>
   
-  
-  <div class="">
     <Footer 
     />
   </div>
@@ -60,10 +61,3 @@ export default {
 }
 </script>
 
-<style >
-
-@media(min-width: 768px){
-  #rout{ height: 59vh; }
-}
-
-</style>

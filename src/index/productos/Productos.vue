@@ -1,19 +1,15 @@
 <template>
  
-<div class="md:w-96 md:h-3/4 2xl:h-4/5 3xl:h-5/6  md:overflow-auto">
-    <h1>{{ serch }}</h1>
-
+<div class="md:w-96">
     <ul class="4xl:mt-16 3xl:mt-8 2xl:mt-4 md:pt-3 mt-1 pt-1 "  id="array">
         <li 
-        class="4xl:mt-6  3xl:mt-1 3xl:text-xl 3xl:pl-10 2xl:mt-1 2xl:text-base 4xl:text-3xl   md:text-left md:pl-12 md:pt-1 text-sm text-right font-mukta w800 text-gray-700 hover:text-black" 
-        v-for="(prod, ind) in prod" :key="ind"
+            class="4xl:mt-6  3xl:mt-1 3xl:text-xl 3xl:pl-10 2xl:mt-1 2xl:text-base 4xl:text-3xl   md:text-left md:pl-12 md:pt-1 text-sm text-right font-mukta w800 text-gray-700 hover:text-black" 
+            v-for="(prod) in filtrado" :key="prod.ind"
         >
              <router-link 
                 active-class="border-blue border-b border-double md:border-solid md:border-b-0 md:border-l-4 text-black "
                 :to="{ name: 'producto', 
-                    params: { 
-                        ...prod
-                        }
+                    params: { ...prod }
                 }"
              >
                 {{ prod.nombre }}
@@ -58,20 +54,14 @@
     },
     computed: {
         filtrado() {
-            return this.prod.filter(prod => prod.nombre.includes(this.serch));
+            return this.prod.filter(
+                prod =>
+                    prod.nombre.toUpperCase().includes(this.serch) ||
+                    prod.desc.toUpperCase().includes(this.serch) ||
+                    prod.detalle.toUpperCase().includes(this.serch)
+            );
         }
     }
-   
-  }
-
-
-
+}
 
 </script>
-
-<style scoped>
-    #array{
-         height: 209px;
-    }
- 
-</style>

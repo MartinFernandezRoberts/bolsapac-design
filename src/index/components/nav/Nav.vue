@@ -4,9 +4,7 @@
             <div class="flex-row flex mt-2  ">
                 <router-link :to="{ name: 'portada'}">
                     <div  class="md:ml-11  md:w-56  relative flex-grow flex justify-center" >
-                        
-                            <img link-to class="" src="@/assets/img/bolsapac_logo.svg" alt="Bolsapac"/>
-                        
+                        <img link-to class="" src="@/assets/img/bolsapac_logo.svg" alt="Bolsapac"/>
                     </div>
                 </router-link>
                 <div class="flex flex-col ">

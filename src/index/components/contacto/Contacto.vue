@@ -1,6 +1,5 @@
 <template>
-  <div class="overflow-auto ">
-  <div class="pr-2 my-4  md:-mt-10 text-right">
+  <div class="pr-2 my-4  text-right">
     <h1 class="mr-4 font-mukta text-lg text-right font-mukta w800 ">
         Contacto y Ubicación
     </h1>
@@ -41,7 +40,6 @@
       >
       </iframe>
     </div>
-  </div>
   </div>
 </template>
 
