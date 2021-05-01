@@ -1,5 +1,5 @@
 <template>
-    <div class="md:mt-6 overflow-auto xl:h-full">
+    <div class="md:mt-6 xl:h-full">
         <div class="h-auto w-auto pr-6">
             <div class="text-right pr-2 pb-2">
                 <h1 class="md:pr-4 2xl:text-3xl font-mukta text-lg text-right font-mukta w800 ">

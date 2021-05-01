@@ -29,14 +29,8 @@
 </template>
 
 <script>
-
-
-
 export default {
-    name:'Footer',
-    components:{
-       
-    }
+    name:'Footer'
 }
 </script>
 

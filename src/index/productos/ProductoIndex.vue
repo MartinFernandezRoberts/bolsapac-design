@@ -25,10 +25,12 @@
             <h1 class="pr-8 font-mukta text-sm text-right font-mukta w800 ">
                 {{ nombre }}
             </h1>
-            
+             <h2 class="pr-8 font-mukta text-sm text-center font-mukta w400">
+                {{ desc }}
+            </h2>
             </div>
             <span>
-            <h2 class="hidden md:block w-1/3 -mt-36 font-mukta text-base text-left font-mukta w400">
+            <h2 class="hidden md:block w-1/3 -mt-36 font-mukta text-sm text-left font-mukta w400">
                 {{ desc }}
             </h2>
             </span>

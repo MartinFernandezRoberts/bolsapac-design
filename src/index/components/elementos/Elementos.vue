@@ -1,11 +1,12 @@
 <template>
   <div 
-  class="flex flex-col items-center  bg-blue  pt-6 md:pt-0 pb-3 md:pb-10 space-y-14 
-          md:flex-row md:items-stretch md:bg-transparent md:space-y-0 md:ml-6 md:w-full"
+  class="flex md:flex-grow flex-col items-center bg-blue pt-6 md:pt-0 pb-3 md:pb-10 space-y-14
+          md:flex-row md:bg-transparent md:space-y-0 md:pl-6 md:ml-12 md:w-2/4 "
+          
   id="mov">
        <router-link v-for="(elem, ind) in elem" :key="ind" 
         :to="{ name:  elem.nombre }" 
-        class="md:mx-auto md:w-full md:text-center md:py-2 text-white md:text-gray-600  md:hover:text-black"
+        class="md:w-full md:text-center md:py-2 text-white md:text-gray-600  md:hover:text-black"
         active-class="border-white border-b-2 border-solid md:border-blue md:text-black "
         >
           <p 

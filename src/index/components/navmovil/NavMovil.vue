@@ -23,12 +23,12 @@
       />
     </div>
 
-    <div class="w-full">
-      <div class="">
-        <Buscar @buscar="pasaBuscar" :serch="serch"
-        />
-      </div>
-      <Productos
+    <div class="w-full -mt-1">
+      
+      <Buscar @buscar="pasaBuscar" :serch="serch"
+      />
+
+      <Productos @buscar="pasaBuscar" :serch="serch"
       />
     </div>
   </div>
@@ -55,7 +55,6 @@ export default {
     data() {
       return {
         abierto: true,
-        
       }
     },
     methods: {

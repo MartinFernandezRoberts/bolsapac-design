@@ -1,9 +1,11 @@
 <template>
  
 <div class="md:w-96">
-    <ul class="4xl:mt-16 3xl:mt-8 2xl:mt-4 md:pt-3 mt-1 pt-1 "  id="array">
+    <ul class="4xl:mt-16 3xl:mt-8 2xl:mt-4 md:pt-3 md:mt-1 pt-1 "  id="array">
         <li 
-            class="4xl:mt-6  3xl:mt-1 3xl:text-xl 3xl:pl-10 2xl:mt-1 2xl:text-base 4xl:text-3xl   md:text-left md:pl-12 md:pt-1 text-sm text-right font-mukta w800 text-gray-700 hover:text-black" 
+            class="4xl:mt-6  3xl:mt-1 3xl:text-xl 3xl:pl-10 2xl:mt-1 2xl:text-base 4xl:text-3xl 
+                    md:text-left md:pl-12 md:pt-1 
+                    text-sm text-right font-mukta w800 text-gray-700 hover:text-black" 
             v-for="(prod) in filtrado" :key="prod.ind"
         >
              <router-link 
