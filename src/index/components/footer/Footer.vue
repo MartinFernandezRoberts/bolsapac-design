@@ -13,7 +13,7 @@
       COMPOSTABLE - RECICLABLE - REUTILIZABLE
     </h1>
   </div>
-  <div class="flex mx-auto pt-2 md:h-full ">
+  <div class="flex mx-auto pt-2 md:pt-0 md:h-full ">
       
       <h1 class=" md:h-auto md:my-auto md:text-sm md:mx-3 font-mukta text-xs font-mukta w400 tracking-tighter text-white mx-1">
         Los Duraznos 0683, La Pintana, Santiago, Chile
