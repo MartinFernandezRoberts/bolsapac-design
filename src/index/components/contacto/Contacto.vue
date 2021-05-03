@@ -9,20 +9,20 @@
     <form class="flex flex-col md:-mt-5 w-72 mx-auto contact-form"  @submit.prevent="sendEmail" >
       
 
-      <label class="font-mukta w800 md:mt-0 mt-1">Nombre:</label>
-      <input type="text" placeholder="Ingrese su nombre..." required v-model="nombre" name="nombre">
+      <label class="font-mukta w800 md:mt-2 mt-1">Nombre:</label>
+      <input class="rounded-2xl shadow-md text-sm h-8 " type="text" placeholder="Ingrese su nombre..." required v-model="nombre" name="nombre">
       
-      <label class="font-mukta w800 md:mt-0 mt-1">Correo:</label>
-      <input type="email" required placeholder="correo@ejemplo.cl" v-model="email" name="email">
+      <label class="font-mukta w800 md:mt-2 mt-1">Correo:</label>
+      <input class="rounded-2xl shadow-md text-sm h-8 " type="email" required placeholder="correo@ejemplo.cl" v-model="email" name="email">
 
-      <label class="font-mukta w800 md:mt-0 mt-1">Teléfono:</label>
-      <input type="tel" required placeholder="+56 9 12341234" v-model="tel" name="tel">
+      <label class="font-mukta w800 md:mt-2 mt-1">Teléfono:</label>
+      <input class="rounded-2xl shadow-md text-sm h-8 " type="tel" required placeholder="+56 9 12341234" v-model="tel" name="tel">
       
       <label class="font-mukta w800 mt-2">Comentarios:</label>
-      <textarea required placeholder="Comentarios" v-model="comentario" name="mensaje">
+      <textarea class="rounded-2xl shadow-md text-sm " required placeholder="Comentarios" v-model="comentario" name="mensaje">
       </textarea>
       
-      <input type="submit" value='Enviar Comentario.' class="rounded-md border border-green my-4"  >
+      <input type="submit" value='Enviar Comentario.' class="rounded-2xl border-2 border-green my-4 bg-white cursor-pointer shadow-lg"  >
       
     </form>
 

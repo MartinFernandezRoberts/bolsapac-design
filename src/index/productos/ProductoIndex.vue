@@ -30,7 +30,7 @@
             </h2>
             </div>
             <span>
-            <h2 class="hidden md:block w-1/3 -mt-36 font-mukta text-sm text-left font-mukta w400">
+            <h2 class="hidden md:block shadow-md w-1/3 -mt-16 font-mukta text-sm text-left font-mukta w400">
                 {{ desc }}
             </h2>
             </span>

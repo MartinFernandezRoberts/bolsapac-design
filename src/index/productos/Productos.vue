@@ -9,7 +9,7 @@
             v-for="(prod) in filtrado" :key="prod.ind"
         >
              <router-link 
-                active-class="border-blue border-b border-double md:border-solid md:border-b-0 md:border-l-4 text-black "
+                active-class="border-blue border-b border-double md:border-solid md:border-b-0 md:border-l-2 text-black "
                 :to="{ name: 'producto', 
                     params: { ...prod }
                 }"
