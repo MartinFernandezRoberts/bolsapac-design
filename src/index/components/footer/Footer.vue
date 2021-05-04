@@ -21,15 +21,15 @@
 
         <h1 class="hidden md:block md:h-auto md:my-auto md:text-sm md:mx-3 md:font-mukta md:w400 md:text-white cursor-default">|</h1>
 
-      <h1 class=" md:h-auto md:my-auto md:text-sm md:mx-3 text-white font-mukta text-xs font-mukta tracking-tighter w400 mr-1">
+      <a href="mailto:contacto@bolsapac.cl" class=" md:h-auto md:my-auto md:text-sm md:mx-3 text-white font-mukta text-xs font-mukta tracking-tighter w400 mr-1">
         contacto@bolsapac.cl
-      </h1>
+      </a>
 
         <h1 class="hidden md:block md:h-auto md:my-auto md:text-sm md:mx-3 md:font-mukta md:w400 md:text-white cursor-default">|</h1>
 
-      <h1 class=" md:h-auto md:my-auto md:text-sm md:mx-3 font-mukta text-xs font-mukta tracking-tighter w400 text-white">
+     <a href="mailto:juanriquel@bolsapac.cl" class=" md:h-auto md:my-auto md:text-sm md:mx-3 font-mukta text-xs font-mukta tracking-tighter w400 text-white">
         juanriquel@bolsapac.cl
-      </h1>
+      </a>
   
   </div>
 </div>
