@@ -1,19 +1,19 @@
 
 <template>
-<div id="Prodindx" class="md:w-full md:h-full md:pt-2">
-    <div class="pt-2 4xl:pt-56 pr-2 ">
-        <h1 class="4xl:text-6xl font-mukta text-lg text-right font-mukta w800 ">
+<div id="Prodindx" class="md:w-full md:h-full md:pt-2  ">
+    <div class="pt-2 4xl:pt-56 pr-2 3xl:mb-24 ">
+        <h1 class="4xl:text-6xl 3xl:text-3xl font-mukta text-lg text-right font-mukta w800 ">
             {{ nombre  }}
         </h1>
-        <p class="4xl:text-4xl font-mukta text-sm text-right font-mukta w800">
+        <p class="4xl:text-4xl  3xl:text-2xl font-mukta text-sm text-right font-mukta w600">
             {{ detalle }} </p>
     </div>
 
     <div class="flex flex-row">
         <div class="md:w-full">
-            <Carousel class="md:w-full md:pt-0 pt-2 " :items-to-show="1" :wrapAround=true >
+            <Carousel class=" md:w-full md:pt-0 pt-2 " :items-to-show="1" :wrapAround=true >
                 <Slide v-for="(imagen, index) in imagenes" :key="index" >
-                    <img class="max-h-80" :src="require(`@/assets/img/productos/${imagenes[index]}`)" id="theIm" :alt= nombre >
+                    <img class="max-h-80 3xl:max-h-96" :src="require(`@/assets/img/productos/${imagenes[index]}`)" id="theIm" :alt= nombre >
                 </Slide>
             <template #addons>
                 <Navigation 
@@ -30,7 +30,7 @@
             </h2>
             </div>
             <span>
-            <h2 class="hidden md:block shadow-md w-1/3 -mt-24 font-mukta text-sm text-left font-mukta w400">
+            <h2 class="hidden md:block 3xl:text-2xl 3xl:-mt-36 shadow-md w-1/3 -mt-24 font-mukta text-sm text-left font-mukta w400">
                 {{ desc }}
             </h2>
             </span>

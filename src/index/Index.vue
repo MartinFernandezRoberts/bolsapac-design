@@ -19,7 +19,7 @@
         />
       </div>
 
-      <div class="md:flex md:flex-col md:w-full md:-mt-28" > 
+      <div class="md:flex md:flex-col md:w-full md:-mt-28 3xl:-mt-12 3xl:ml-24" > 
         <router-view>
         </router-view>
       </div>

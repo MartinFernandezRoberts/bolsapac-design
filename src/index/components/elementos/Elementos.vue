@@ -6,11 +6,11 @@
   id="mov">
        <router-link v-for="(elem, ind) in elem" :key="ind" 
         :to="{ name:  elem.nombre }" 
-        class="md:w-full md:mx-10 md:text-center md:py-2 text-white md:text-gray-600 md:hover:text-black transition duration-500 ease-in-out "
+        class="md:w-full md:mx-10  md:text-center md:py-2 text-white md:text-gray-600 md:hover:text-black transition duration-500 ease-in-out "
         active-class="border-white border-b-2 border-solid md:border-blue md:text-black "
         >
           <p 
-          class="text-xs md:text-sm lg:text-base 4xl:text-4xl 
+          class="text-xs md:text-sm lg:text-base 3xl:text-2xl 3xl:mx-10 4xl:text-4xl 
           text-center font-medium  font-mukta tracking-tighter md:tracking-normal w200 md:w600
           ">
             {{ elem.disp }}
