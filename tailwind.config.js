@@ -14,6 +14,7 @@ module.exports = {
     minHeight: {
       '20': '5rem',
      'screen': '100vh',
+     '55': '12rem',
      },
       screens: {
         '3xl': '1919px',

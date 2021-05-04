@@ -1,5 +1,5 @@
 <template>
-  <div class="pr-2 my-4  text-right">
+  <div class="pr-2 pt-6  text-right">
     <h1 class="mr-4 font-mukta text-lg text-right font-mukta w800 ">
         Contacto y Ubicación
     </h1>
@@ -10,19 +10,24 @@
       
 
       <label class="font-mukta w800 md:mt-2 mt-1">Nombre:</label>
-      <input class="rounded-2xl shadow-md text-sm h-8 " type="text" placeholder="Ingrese su nombre..." required v-model="nombre" name="nombre">
+      <input class="rounded-2xl shadow-md text-sm h-8 " type="text" placeholder="Ingrese su nombre" required v-model="nombre" name="nombre">
       
       <label class="font-mukta w800 md:mt-2 mt-1">Correo:</label>
       <input class="rounded-2xl shadow-md text-sm h-8 " type="email" required placeholder="correo@ejemplo.cl" v-model="email" name="email">
 
       <label class="font-mukta w800 md:mt-2 mt-1">Teléfono:</label>
-      <input class="rounded-2xl shadow-md text-sm h-8 " type="tel" required placeholder="+56 9 12341234" v-model="tel" name="tel">
+      <input class="rounded-2xl shadow-md text-sm h-8 " type="tel" required placeholder="+56 9 92341234" v-model="tel" name="tel">
       
       <label class="font-mukta w800 mt-2">Comentarios:</label>
       <textarea class="rounded-2xl shadow-md text-sm " required placeholder="Comentarios" v-model="comentario" name="mensaje">
       </textarea>
       
-      <input type="submit" value='Enviar Comentario.' class="rounded-2xl border-2 border-green my-4 bg-white cursor-pointer shadow-lg"  >
+      <input 
+        type="submit"
+        value='Enviar Comentario'
+        class="rounded-2xl border-2 border-green my-4 bg-white transition duration-500 ease-in-out hover:bg-green hover:text-white "
+      >
+      
       
     </form>
 

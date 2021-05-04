@@ -1,24 +1,37 @@
 <template>
  
-<div class="md:w-96">
+<div class="md:w-96 md:min-h-55">
     <ul class="4xl:mt-16 3xl:mt-8 2xl:mt-4 md:pt-3 md:mt-1 pt-1 "  id="array">
+        
         <li 
             class="4xl:mt-6  3xl:mt-1 3xl:text-xl 3xl:pl-10 2xl:mt-1 2xl:text-base 4xl:text-3xl 
                     md:text-left md:pl-12 md:pt-1 
-                    text-sm text-right font-mukta w800 text-gray-700 hover:text-black" 
+                    text-sm text-right font-mukta w800 text-gray-700 hover:text-black 
+                    transition duration-500 ease-in-out" 
             v-for="(prod) in filtrado" :key="prod.ind"
+            
+            
         >
+                <!--  <span :class="{ active: isActive }" v-if="isActive === true" class=" flex relative h-3 w-3">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-purple-500"></span>
+                </span> -->
+        
              <router-link 
-                active-class="border-blue border-b border-double md:border-solid md:border-b-0 md:border-l-2 text-black "
+                class=" transition duration-500 ease-in-out"
+                active-class="border-blue border-b border-double md:border-solid md:border-b-0 md:border-l-2 text-black shadow-sm "
                 :to="{ name: 'producto', 
                     params: { ...prod }
                 }"
              >
+           
+
                 {{ prod.nombre }}
 
                 <span class="md:hidden text-xs font-mukta w200"> 
                     {{ prod.detalle }}
                 </span>
+                
 
                 <h1 class="hidden md:block -mt-1 text-sm 4xl:text-2xl font-mukta w200">
                     {{ prod.detalle }}

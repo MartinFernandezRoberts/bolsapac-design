@@ -2,12 +2,12 @@
 
   <div class="flex flex-row">
     <div class="">
-      <BotonM :abierto="abierto" @abrir="abierto=!abierto"
+      <BotonM :abierto="abierto" @abrir="abierto=!abierto" class="transition duration-500 ease-in-out"
       />
     </div>
     
-      <router-link :to="{ name: 'portada' }" class="flex-grow flex justify-center w-full">
-        <div class="flex-grow flex justify-center w-full" id="logM">
+      <router-link :to="{ name: 'portada' }" class="flex-grow flex justify-center shadow-md w-auto ml-6 transition duration-500 ease-in-out">
+        <div class="flex-grow flex justify-center w-auto" id="logM">
           <img link-to class="" src="@/assets/img/LogoM.svg" alt="Bolsapac"/>  
         </div>
               
@@ -15,7 +15,7 @@
 
   </div>
   
-  <div class="flex flex-row">
+  <div class="flex flex-row ">
     <div class="" id="enc">
       <Elementos v-if="abierto"
       />

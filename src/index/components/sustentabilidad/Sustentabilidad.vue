@@ -1,5 +1,5 @@
 <template>
-  <div>Sustentabilidad</div>
+  <div class=" mt-16">Sustentabilidad</div>
 </template>
 
 <script>

@@ -1,7 +1,7 @@
 <template>
 
 <div class="bg-green w-full h-20 flex flex-col md:flex-row md:min-h-20 md:flex-grow md:mt-16">
-  <div class="flex mx-auto md:h-auto  mt-2 md:my-6 relative">
+  <router-link :to="{ name: 'sustentabilidad'}" class="flex mx-auto md:h-auto  mt-2 md:my-6 relative">
     <div class="relative flex w-5 h-5 md:h-auto md:w-auto ">
       <img class="md:h-auto md:w-20 md:mx-0 mx-auto" src="@/assets/img/reciclable.svg" alt="Bolsapac"/>
     </div>
@@ -12,7 +12,7 @@
     <h1 class="md:h-auto md:my-auto md:text-sm text-white text-left font-mukta text-sm tracking-tighter h-4 font-mukta w800 pl-1 pr-1 border-b-2 border-white ">
       COMPOSTABLE - RECICLABLE - REUTILIZABLE
     </h1>
-  </div>
+  </router-link>
   <div class="flex mx-auto pt-2 md:pt-0 md:h-full ">
       
       <h1 class=" md:h-auto md:my-auto md:text-sm md:mx-3 font-mukta text-xs font-mukta w400 tracking-tighter text-white mx-1">

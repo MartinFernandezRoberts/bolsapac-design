@@ -1,5 +1,5 @@
 <template>
-  <div>Procesos</div>
+  <div class="mt-16">Procesos</div>
 </template>
 
 <script>
